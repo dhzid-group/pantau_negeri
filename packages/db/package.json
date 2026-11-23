@@ -1,0 +1,25 @@
+{
+  "name": "pantau-db",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
+    "seed": "tsx src/seed.ts",
+    "studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
+    "mysql2": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "drizzle-kit": "^0.24.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}

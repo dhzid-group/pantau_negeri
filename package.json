@@ -1,0 +1,23 @@
+{
+  "name": "pantaunegeri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Platform transparansi lembaga negara Indonesia",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev:api": "pnpm --filter pantau-api dev",
+    "dev:frontend": "pnpm --filter pantau-frontend dev",
+    "dev:worker": "pnpm --filter pantau-worker dev",
+    "build": "pnpm --filter pantau-db build && pnpm --filter pantau-shared build && pnpm --filter pantau-api build && pnpm --filter pantau-worker build && pnpm --filter pantau-frontend build",
+    "db:generate": "pnpm --filter pantau-db generate",
+    "db:migrate": "pnpm --filter pantau-db migrate",
+    "db:seed": "pnpm --filter pantau-db seed",
+    "db:studio": "pnpm --filter pantau-db studio"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

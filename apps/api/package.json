@@ -1,0 +1,27 @@
+{
+  "name": "pantau-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.0",
+    "@fastify/swagger": "^9.0.0",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.33.0",
+    "fastify": "^5.2.0",
+    "nodemailer": "^6.9.16",
+    "pantau-db": "workspace:*",
+    "pantau-shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/nodemailer": "^6.4.17",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}

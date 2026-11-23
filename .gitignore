@@ -1,0 +1,21 @@
+# Mengabaikan file environment (API key, password database)
+.env
+.env.local
+
+# Mengabaikan folder dependencies & build
+node_modules/
+dist/
+build/
+
+# Mengabaikan semua file log
+*.log
+
+# Mengabaikan semua file .txt, KECUALI catatan.txt
+*.txt
+!catatan.txt
+
+# Mengabaikan file sistem operasi & editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
